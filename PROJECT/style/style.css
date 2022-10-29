@@ -476,11 +476,14 @@ input {
 /* ***** FOOTER ***** */
 
 .footer{
-  padding: 0.5rem;
   background-color: var(--third-color);
   font-size: small;
   text-align: center;
   grid-area: footer;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 @media only screen and (min-width: 600px) {
