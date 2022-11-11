@@ -1,0 +1,47 @@
+  
+#nav-color {
+  background-color: $second-color;
+
+  .container {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    li {
+      list-style-type: none;
+      padding: 5px;
+    }
+
+  }
+
+}  
+ 
+@media only screen and (min-width: 600px) {
+  
+  #logo_img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav-enlace {
+    margin: 0 1.2rem;
+  }
+
+  .nav-enlace:hover {
+    background-color: $first_color;
+    color: $white-color;
+    padding: 1rem;
+  }
+}
+  

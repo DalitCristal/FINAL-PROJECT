@@ -1,0 +1,24 @@
+
+.main_ubicacion {
+  background-color: var(--gray-light-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .tittle_ubicacion {
+    color: var(--title-color);
+    border-top: 2px solid var(--first-color);
+    border-bottom: 2px solid var(--first-color);
+    font-weight: lighter;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .mapa {
+    width: 100%;
+    height: 100vh;
+    padding: 0.5rem;
+  }
+
+}

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+@import "../scss/variables/variables";
+@import "../scss/header/header";
+@import "../scss/home/home";
+@import "../scss/galeria/galeria";
+@import "../scss/servicios/servicios";
+@import "../scss/ubicacion/ubicacion";
+@import "../scss/contacto/contacto";
+@import "../scss/footer/footer";
