@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font);
+  font-family: "Raleway", sans-serif;
 }
 
 .btn_form {
@@ -91,10 +91,10 @@
 }
 .home #tittle {
   font-family: "Raleway", sans-serif;
-  font-weight: lighter;
-  font-size: 2rem;
+  font-size: 40px;
   color: #333;
-  padding-top: 300px;
+  text-align: center;
+  text-shadow: 1px 1px 5px #fff;
 }
 .home .btn a {
   color: #fff;
@@ -121,6 +121,7 @@
     font-size: 70px;
     color: #000;
     padding-top: 0;
+    text-shadow: none;
   }
   #inicio .btn {
     font-size: larger;
@@ -135,11 +136,13 @@
   justify-content: space-evenly;
 }
 .main_galeria #tittle_galeria {
-  margin: 1rem;
+  text-align: center;
   color: #333;
-  border-top: 2px solid #E0B69B;
-  border-bottom: 2px solid #E0B69B;
-  font-weight: lighter;
+  border-top: 0.1rem solid #E0B69B;
+  border-bottom: 0.1rem solid #E0B69B;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
 }
 .main_galeria .grid-section {
   display: grid;
@@ -183,6 +186,7 @@
 @media only screen and (min-width: 600px) {
   .main_galeria #tittle_galeria {
     font-size: 40px;
+    font-weight: lighter;
   }
   .main_galeria .section_gallery .name_seccion {
     font-size: 1.5rem;
@@ -205,11 +209,13 @@
   background: #f3f3f3;
 }
 .main_servicios #tittle_servicios {
+  text-align: center;
   color: #333;
-  border-top: 2px solid #E0B69B;
-  border-bottom: 2px solid #E0B69B;
-  font-weight: lighter;
-  margin: 2rem;
+  border-top: 0.1rem solid #E0B69B;
+  border-bottom: 0.1rem solid #E0B69B;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
 }
 .main_servicios .services {
   background-color: #666;
@@ -282,11 +288,17 @@
 }
 
 @media only screen and (min-width: 680px) {
+  .main_servicios #tittle_servicios {
+    font-weight: lighter;
+  }
   .main_servicios .services {
     height: 800px;
   }
 }
 @media only screen and (min-width: 1020px) {
+  .main_servicios #tittle_servicios {
+    font-weight: lighter;
+  }
   .main_servicios .services {
     height: 100vh;
   }
@@ -368,7 +380,7 @@
   }
   .main_contacto .formulario {
     width: 80%;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

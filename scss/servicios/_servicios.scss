@@ -7,11 +7,13 @@
   background: $gray_light_color;
 
   #tittle_servicios {
+    text-align: center;
     color: $title_color;
-    border-top: 2px solid $first_color;
-    border-bottom: 2px solid $first_color;
-    font-weight: lighter;
-    margin: 2rem;
+    border-top: 0.1rem solid $first_color;
+    border-bottom: 0.1rem solid $first_color;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
   }
 
   .services {
@@ -103,6 +105,11 @@
   
 @media only screen and (min-width: 680px) { 
   .main_servicios{
+    
+    #tittle_servicios {
+      font-weight: lighter;
+    }
+
     .services {
       height: 800px;
     }
@@ -112,6 +119,11 @@
   
 @media only screen and (min-width: 1020px) { 
   .main_servicios{
+
+    #tittle_servicios {
+      font-weight: lighter;
+    }
+
     .services {
       height: 100vh;
     }

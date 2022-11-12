@@ -8,11 +8,13 @@
   justify-content: space-evenly;
   
   #tittle_galeria {
-    margin: 1rem;
+    text-align: center;
     color: $title_color;
-    border-top: 2px solid $first_color;
-    border-bottom: 2px solid $first_color;
-    font-weight: lighter;
+    border-top: 0.1rem solid $first_color;
+    border-bottom: 0.1rem solid $first_color;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
   }
 
   .grid-section {
@@ -73,6 +75,7 @@
 
     #tittle_galeria {
       font-size: 40px;
+      font-weight: lighter;
     }
 
     .section_gallery{

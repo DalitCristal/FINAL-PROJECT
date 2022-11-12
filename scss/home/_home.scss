@@ -13,10 +13,10 @@
 
     #tittle {
         font-family: $font;
-        font-weight: lighter;
-        font-size: 2rem;
+        font-size: 40px;
         color: $title_color;
-        padding-top: 300px;
+        text-align: center;
+        text-shadow: 1px 1px 5px $white_color;
     }
 
     .btn {
@@ -49,6 +49,7 @@
       font-size: 70px;
       color: $black_color;
       padding-top: 0;
+      text-shadow:none;
     }
 
     .btn {
