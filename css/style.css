@@ -5,6 +5,42 @@
   font-family: var(--font);
 }
 
+.btn_form {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #666;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn_section {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #666;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #666;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
 #nav-color {
   background-color: #489294;
 }
@@ -62,15 +98,11 @@
 }
 .home .btn a {
   color: #fff;
-  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 @media only screen and (min-width: 600px) {
-  .btn {
-    font-size: larger;
-  }
   .home {
     background-image: url(../assets/img_fondo_home_mobile.png);
     background-size: cover;
@@ -85,10 +117,13 @@
     align-items: flex-start;
     padding: 1rem;
   }
-  #tittle {
-    font-size: 60px;
+  #inicio #tittle {
+    font-size: 70px;
     color: #000;
     padding-top: 0;
+  }
+  #inicio .btn {
+    font-size: larger;
   }
 }
 .main_galeria {
@@ -100,6 +135,7 @@
   justify-content: space-evenly;
 }
 .main_galeria #tittle_galeria {
+  margin: 1rem;
   color: #333;
   border-top: 2px solid #E0B69B;
   border-bottom: 2px solid #E0B69B;
@@ -138,27 +174,27 @@
 }
 .main_galeria .section_gallery .btn_section {
   grid-area: boton;
-  font-size: 16px;
-  padding: 0.25rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
+}
+.main_galeria .section_gallery .btn_section a {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media only screen and (min-width: 600px) {
-  .btn_section {
+  .main_galeria #tittle_galeria {
+    font-size: 40px;
+  }
+  .main_galeria .section_gallery .name_seccion {
+    font-size: 1.5rem;
+  }
+  .main_galeria .section_gallery .parrafo_section {
+    font-size: 20px;
+  }
+  .main_galeria .section_gallery .btn_section {
     font-size: 20px;
     padding: 0.5rem;
     color: #000;
     border: none;
-  }
-  .name_seccion {
-    font-size: 1.5rem;
-  }
-  .parrafo_section {
-    font-size: 20px;
-  }
-  #tittle_galeria {
-    font-size: 40px;
   }
 }
 .main_servicios {
@@ -238,39 +274,37 @@
 .main_servicios .services .card .back .link a {
   color: #fff;
 }
-
-.card:hover .back {
+.main_servicios .services .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
-
-.card:hover .front {
+.main_servicios .services .card:hover .front {
   transform: perspective(600px) rotateY(180deg);
 }
 
 @media only screen and (min-width: 680px) {
-  .services {
+  .main_servicios .services {
     height: 800px;
   }
 }
 @media only screen and (min-width: 1020px) {
-  .services {
+  .main_servicios .services {
     height: 100vh;
   }
 }
 .main_ubicacion {
-  background-color: var(--gray-light-color);
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .main_ubicacion .tittle_ubicacion {
-  color: var(--title-color);
-  border-top: 2px solid var(--first-color);
-  border-bottom: 2px solid var(--first-color);
-  font-weight: lighter;
-  margin: 2rem;
   text-align: center;
+  color: #333;
+  border-top: 0.1rem solid #E0B69B;
+  border-bottom: 0.1rem solid #E0B69B;
+  margin: 1rem;
+  padding: 0.5rem;
 }
 .main_ubicacion .mapa {
   width: 100%;
@@ -278,6 +312,11 @@
   padding: 0.5rem;
 }
 
+@media only screen and (min-width: 600px) {
+  .tittle_ubicacion {
+    font-weight: lighter;
+  }
+}
 .main_contacto {
   display: flex;
   flex-direction: column;
@@ -309,27 +348,25 @@
   font-family: "Raleway", sans-serif;
   margin-bottom: 1rem;
 }
-.main_contacto .formulario .btn_form {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-  background-color: #E0B69B;
-  font-weight: bold;
-  border: none;
-}
 .main_contacto .formulario .btn_form a {
   text-decoration: none;
   color: #fff;
 }
 
 @media only screen and (min-width: 600px) {
-  .box-shadow-form {
-    box-shadow: 0 5px 10px var(--black-color);
+  .main_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
-  .btn_form:hover {
-    background-color: var(--gray-dark-color);
+  .main_contacto .tittle_contacto {
+    font-weight: lighter;
   }
-  .formulario {
+  .main_contacto .box-shadow-form {
+    box-shadow: 0 5px 10px #000;
+  }
+  .main_contacto .formulario {
     width: 80%;
     height: 70vh;
     display: flex;
@@ -339,11 +376,8 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
-  .main_contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  .main_contacto .formulario .btn_form:hover {
+    background-color: #666;
   }
 }
 .footer {

@@ -1,0 +1,24 @@
+
+@mixin btn($color_fondo, $color_letra){
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: $color_fondo;
+    color: $color_letra;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    font-family: $font;
+}
+
+.btn_form{
+    @include btn($gray_dark_color, $white_color)
+}
+
+.btn_section {
+    @include btn($gray_dark_color, $white_color)
+}
+
+.btn{
+    @include btn($gray_dark_color, $white_color)
+}

@@ -1,18 +1,18 @@
 
 .main_ubicacion {
-  background-color: var(--gray-light-color);
+  background-color: $gray_light_color;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .tittle_ubicacion {
-    color: var(--title-color);
-    border-top: 2px solid var(--first-color);
-    border-bottom: 2px solid var(--first-color);
-    font-weight: lighter;
-    margin: 2rem;
     text-align: center;
+    color: $title_color;
+    border-top: 0.1rem solid $first_color;
+    border-bottom: 0.1rem solid $first_color;
+    margin: 1rem;
+    padding: 0.5rem;
   }
 
   .mapa {
@@ -21,4 +21,10 @@
     padding: 0.5rem;
   }
 
+}
+
+@media only screen and (min-width: 600px) {
+  .tittle_ubicacion{
+    font-weight: lighter;
+  }
 }

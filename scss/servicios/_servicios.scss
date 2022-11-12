@@ -89,28 +89,34 @@
       
     }
 
+    .card:hover .back{
+      transform: perspective(600px) rotateY(360deg);
+    }
+
+    .card:hover .front{
+      transform: perspective(600px) rotateY(180deg);
+    }
+
   }
 
-}
-
-.card:hover .back{
-  transform: perspective(600px) rotateY(360deg);
-}
-  
-.card:hover .front{
-  transform: perspective(600px) rotateY(180deg);
 }
   
 @media only screen and (min-width: 680px) { 
-  .services {
-    height: 800px;
+  .main_servicios{
+    .services {
+      height: 800px;
+    }
   }
+  
 }
   
 @media only screen and (min-width: 1020px) { 
-  .services {
-    height: 100vh;
+  .main_servicios{
+    .services {
+      height: 100vh;
+    }
   }
+  
 }
   
   

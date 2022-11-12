@@ -8,6 +8,7 @@
   justify-content: space-evenly;
   
   #tittle_galeria {
+    margin: 1rem;
     color: $title_color;
     border-top: 2px solid $first_color;
     border-bottom: 2px solid $first_color;
@@ -55,10 +56,12 @@
 
     .btn_section {
       grid-area: boton;
-      font-size: 16px;
-      padding: 0.25rem;
-      background-color: $opacity_white_color;
-      border: none;
+      
+      a {
+        text-decoration: none;
+        color: $white-color;
+      }
+      
     }
 
   }
@@ -66,24 +69,31 @@
 }
   
 @media only screen and (min-width: 600px) {
-    
-  .btn_section {
-    font-size: 20px;
-    padding: 0.5rem;
-    color: $black_color;
-    border: none;
-  }
+  .main_galeria {
 
-  .name_seccion {
-    font-size: 1.5rem;
-  }
+    #tittle_galeria {
+      font-size: 40px;
+    }
 
-  .parrafo_section {
-    font-size: 20px;
-  }
+    .section_gallery{
 
-  #tittle_galeria {
-    font-size: 40px;
+      .name_seccion {
+        font-size: 1.5rem;
+      }
+
+      .parrafo_section {
+        font-size: 20px;
+      }
+
+      .btn_section {
+        font-size: 20px;
+        padding: 0.5rem;
+        color: $black_color;
+        border: none;
+      }
+
+    }
+
   }
     
 } 
