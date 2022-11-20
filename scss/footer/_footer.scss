@@ -1,24 +1,28 @@
 
 .footer{
-  background-color: $third-color;
-  font-size: small;
+  background-color: $second-color;
   text-align: center;
-  grid-area: footer;
-
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
+ 
   
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+
+  p {
+    padding-top: 1rem;
+    a {
+      color: $black_color;
+    }
+  }
+
+}
+
 @media only screen and (min-width: 600px) {
   
   .footer {
     padding: 1rem;
     font-size: 20px;
-  }
-
-  .footer p {
-    text-align: center;
   }
 
 }
