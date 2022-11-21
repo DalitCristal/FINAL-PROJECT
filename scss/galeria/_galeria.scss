@@ -4,8 +4,7 @@ body {
   box-sizing: border-box;
 
   .main_galeria {
-    background-color: $opacity-first-color;
-    
+    background-color: $second_color;
 
     .section_galeria {
       margin-top: 1rem auto;
@@ -14,8 +13,8 @@ body {
       #tittle_galeria {
         text-align: center;
         color: $title_color;
-        border-top: 0.1rem solid $first_color;
-        border-bottom: 0.1rem solid $first_color;
+        border-top: thin solid $black_color;
+        border-bottom: thin solid $black_color;
         width: 250px;
         margin: 1rem auto;
         padding: 0.5rem 1rem;
@@ -28,6 +27,8 @@ body {
         img {
           width: 100%;
           margin-top: 10px;
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
         }
         
       }

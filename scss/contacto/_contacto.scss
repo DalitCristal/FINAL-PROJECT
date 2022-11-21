@@ -8,13 +8,15 @@
   .tittle_contacto {
     text-align: center;
     color: $title_color;
-    border-top: 0.1rem solid $first_color;
-    border-bottom: 0.1rem solid $first_color;
+    border-top: 0.1rem solid $black_color;
+    border-bottom: 0.1rem solid $black_color;
     margin: 1rem;
     padding: 0.5rem;
+    text-transform: uppercase;
   }
 
   .formulario {
+    background-color: $white_color;
     text-align: center;
 
     input {

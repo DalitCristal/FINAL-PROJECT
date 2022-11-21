@@ -4,20 +4,20 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: $gray_light_color;
+  background: $second_color;
 
   #tittle_servicios {
     text-align: center;
     color: $title_color;
-    border-top: 0.1rem solid $first_color;
-    border-bottom: 0.1rem solid $first_color;
+    border-top: 0.1rem solid $black_color;
+    border-bottom: 0.1rem solid $black_color;
     margin: 1rem;
     padding: 0.5rem;
     text-transform: uppercase;
   }
 
   .services {
-    background-color: $gray_dark_color;
+    background-color: $second_color;
     height: 1200px;
     width: 100%;
     display: flex;
@@ -31,7 +31,7 @@
       width: 300px;
       height: 350px;
       margin: 20px;
-      background: $gray_dark_color;
+      background:  $second_color;
 
       .face {
         position: absolute;
