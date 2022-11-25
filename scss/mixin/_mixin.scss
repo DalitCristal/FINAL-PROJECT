@@ -9,16 +9,28 @@
     border: none;
     text-transform: uppercase;
     font-family: $font;
-}
+} /* Este mixin es para crear botones */
 
 .btn_form{
-    @include btn($gray_dark_color, $white_color)
-}
-
-.btn_section {
-    @include btn($gray_dark_color, $white_color)
+    @include btn($third_color, $white_color)
 }
 
 .btn{
-    @include btn($gray_dark_color, $white_color)
+    @include btn($third_color, $white_color)
+}
+
+
+
+@mixin titulos(){
+    text-align: center;
+    color: $title_color;
+    border-top: thin solid $black_color;
+    border-bottom:  thin solid $black_color;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+} /* Este mixin es para los titulos de las secciones como servicio, ubicacion,etc */
+
+.tittle {
+    @include titulos()    
 }

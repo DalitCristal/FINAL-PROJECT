@@ -1,9 +1,3 @@
-/* $first_color: #E0B69B;
-$opacity-first-color: rgba(224, 182, 155, 0.75); 
-$second-color: #489294;
-$opacity-second-color: rgba(72, 146, 148, 0.75);
-$third-color: #9BDFEE;
-$opacity-third-color: rgba(155, 223, 238, 0.75); */
 * {
   margin: 0;
   padding: 0;
@@ -11,23 +5,12 @@ $opacity-third-color: rgba(155, 223, 238, 0.75); */
   font-family: "Raleway", sans-serif;
 }
 
+/* Este mixin es para crear botones */
 .btn_form {
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 8px;
-  background-color: #666;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-}
-
-.btn_section {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-  background-color: #666;
+  background-color: #BB8246;
   color: #fff;
   font-weight: bold;
   border: none;
@@ -39,12 +22,23 @@ $opacity-third-color: rgba(155, 223, 238, 0.75); */
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 8px;
-  background-color: #666;
+  background-color: #BB8246;
   color: #fff;
   font-weight: bold;
   border: none;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
+}
+
+/* Este mixin es para los titulos de las secciones como servicio, ubicacion,etc */
+.tittle {
+  text-align: center;
+  color: #205E7C;
+  border-top: thin solid #000;
+  border-bottom: thin solid #000;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
 }
 
 #nav-color {
@@ -83,11 +77,24 @@ $opacity-third-color: rgba(155, 223, 238, 0.75); */
     padding: 1rem;
   }
 }
-.home {
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #tittle {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  color: #205E7C;
+  text-align: center;
+  text-shadow: -3px -3px 0 #fff;
+  margin: 10px;
+}
+main .home {
   display: grid;
-  grid-template-columns: repeat(1, 70%);
-  justify-content: space-evenly;
-  align-content: space-between;
+  grid-template-columns: repeat(1, 50%);
+  justify-content: center;
+  align-content: space-around;
   background-image: url(../assets/fondo_home.jpg);
   background-size: cover;
   background-position: center;
@@ -95,70 +102,47 @@ $opacity-third-color: rgba(155, 223, 238, 0.75); */
   width: 100%;
   height: 100vh;
 }
-.home #tittle {
-  font-family: "Roboto Slab", serif;
-  font-size: 40px;
-  color: #205E7C;
-  text-align: center;
-  text-shadow: -3px -3px 0 #fff;
-}
-.home .img_circular {
-  margin-left: 60px;
-  width: 100px;
-  height: 100px;
+main .home .img_circular {
+  width: 150px;
+  height: 150px;
   border-radius: 25%;
 }
-.home .btn {
-  width: 250px;
+main .btn {
+  margin: 1rem;
 }
-.home .btn a {
+main .btn a {
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-@media only screen and (min-width: 400px) {
-  .home .img_circular {
-    align-items: flex-end;
-  }
-  .home #tittle {
+@media only screen and (min-width: 600px) {
+  main #tittle {
     font-size: 55px;
   }
-  .home .img_circular {
-    margin-left: 0px;
-  }
-}
-@media only screen and (min-width: 600px) {
-  #inicio {
+  main #inicio {
     grid-template-columns: repeat(3, 30%);
     justify-content: space-evenly;
     align-content: space-around;
+    height: 70vh;
   }
-  #inicio #tittle {
-    grid-column: span 3;
-    font-size: 70px;
+  main #inicio .img_circular {
+    width: 180px;
+    height: 180px;
   }
-  #inicio .img_circular {
-    width: 150px;
-    height: 150px;
-  }
-  #inicio .btn {
-    grid-column: span 2;
+  main .btn {
+    width: 190px;
   }
 }
 @media only screen and (min-width: 800px) {
-  #inicio {
-    grid-template-columns: repeat(3, 30%);
+  main #tittle {
+    font-size: 65px;
   }
-  #inicio #tittle {
-    grid-column: span 3;
-  }
-  #inicio .img_circular {
+  main #inicio .img_circular {
     width: 250px;
     height: 250px;
   }
-  #inicio .btn {
-    grid-column: span 1;
+  main .btn {
+    width: 250px;
   }
 }
 body {
@@ -173,15 +157,10 @@ body .main_galeria .section_galeria {
   margin-top: 1rem auto;
   padding: 1rem;
 }
-body .main_galeria .section_galeria #tittle_galeria {
-  text-align: center;
-  color: #333;
-  border-top: thin solid #000;
-  border-bottom: thin solid #000;
+body .main_galeria .section_galeria .tittle {
   width: 250px;
   margin: 1rem auto;
   padding: 0.5rem 1rem;
-  text-transform: uppercase;
 }
 body .main_galeria .section_galeria .contenedor_fotos {
   padding-top: 1rem;
@@ -200,7 +179,7 @@ body .main_galeria .section_galeria .contenedor_fotos img {
     justify-content: space-evenly;
     align-content: center;
   }
-  .section_galeria #tittle_galeria {
+  .section_galeria .tittle {
     grid-column: span 2;
     font-size: 40px;
     font-weight: lighter;
@@ -210,7 +189,7 @@ body .main_galeria .section_galeria .contenedor_fotos img {
   .section_galeria {
     grid-template-columns: repeat(4, 22.5%);
   }
-  .section_galeria #tittle_galeria {
+  .section_galeria .tittle {
     grid-column: span 4;
   }
 }
@@ -220,15 +199,6 @@ body .main_galeria .section_galeria .contenedor_fotos img {
   justify-content: center;
   flex-direction: column;
   background: #ece4b7;
-}
-.main_servicios #tittle_servicios {
-  text-align: center;
-  color: #333;
-  border-top: 0.1rem solid #000;
-  border-bottom: 0.1rem solid #000;
-  margin: 1rem;
-  padding: 0.5rem;
-  text-transform: uppercase;
 }
 .main_servicios .services {
   background-color: #ece4b7;
@@ -301,7 +271,7 @@ body .main_galeria .section_galeria .contenedor_fotos img {
 }
 
 @media only screen and (min-width: 680px) {
-  .main_servicios #tittle_servicios {
+  .main_servicios .tittle {
     font-weight: lighter;
   }
   .main_servicios .services {
@@ -309,9 +279,6 @@ body .main_galeria .section_galeria .contenedor_fotos img {
   }
 }
 @media only screen and (min-width: 1020px) {
-  .main_servicios #tittle_servicios {
-    font-weight: lighter;
-  }
   .main_servicios .services {
     height: 100vh;
   }
@@ -325,15 +292,6 @@ body .main_galeria .section_galeria .contenedor_fotos img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#grilla-contenedora .main_ubicacion .tittle_ubicacion {
-  text-align: center;
-  color: #333;
-  border-top: 0.1rem solid #000;
-  border-bottom: 0.1rem solid #000;
-  margin: 1rem;
-  padding: 0.5rem;
-  text-transform: uppercase;
 }
 #grilla-contenedora .main_ubicacion .mapa {
   width: 100%;
@@ -352,18 +310,10 @@ body .main_galeria .section_galeria .contenedor_fotos img {
   justify-content: center;
   align-items: center;
 }
-.main_contacto .tittle_contacto {
-  text-align: center;
-  color: #333;
-  border-top: 0.1rem solid #000;
-  border-bottom: 0.1rem solid #000;
-  margin: 1rem;
-  padding: 0.5rem;
-  text-transform: uppercase;
-}
 .main_contacto .formulario {
   background-color: #fff;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .main_contacto .formulario input {
   padding: 0.5rem;
@@ -386,19 +336,16 @@ body .main_galeria .section_galeria .contenedor_fotos img {
 
 @media only screen and (min-width: 600px) {
   .main_contacto {
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
   }
-  .main_contacto .tittle_contacto {
+  .main_contacto .tittle {
     font-weight: lighter;
   }
   .main_contacto .box-shadow-form {
     box-shadow: 0 5px 10px #000;
   }
   .main_contacto .formulario {
-    width: 80%;
+    width: 70%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -408,7 +355,10 @@ body .main_galeria .section_galeria .contenedor_fotos img {
     margin-bottom: 3rem;
   }
   .main_contacto .formulario .btn_form:hover {
-    background-color: #666;
+    background-color: #ece4b7;
+  }
+  .main_contacto .formulario .btn_form:hover a {
+    color: #000;
   }
 }
 .footer {
@@ -418,6 +368,13 @@ body .main_galeria .section_galeria .contenedor_fotos img {
   flex-direction: column;
   align-content: center;
   justify-content: space-evenly;
+}
+.footer div a {
+  text-decoration: none;
+}
+.footer div a svg {
+  width: 25px;
+  height: 25px;
 }
 .footer p {
   padding-top: 1rem;
@@ -430,6 +387,10 @@ body .main_galeria .section_galeria .contenedor_fotos img {
   .footer {
     padding: 1rem;
     font-size: 20px;
+  }
+  .footer div a svg {
+    width: 50px;
+    height: 50px;
   }
 }
 

@@ -10,15 +10,10 @@ body {
       margin-top: 1rem auto;
       padding: 1rem;
 
-      #tittle_galeria {
-        text-align: center;
-        color: $title_color;
-        border-top: thin solid $black_color;
-        border-bottom: thin solid $black_color;
+      .tittle {
         width: 250px;
         margin: 1rem auto;
         padding: 0.5rem 1rem;
-        text-transform: uppercase;
       }
 
       .contenedor_fotos {
@@ -46,7 +41,7 @@ body {
     justify-content: space-evenly;
     align-content: center;
   
-    #tittle_galeria {
+    .tittle {
       grid-column: span 2;
       font-size: 40px;
       font-weight: lighter;
@@ -60,7 +55,7 @@ body {
   .section_galeria {
     grid-template-columns: repeat(4, 22.5%);
 
-    #tittle_galeria {
+    .tittle {
       grid-column: span 4;
     }
 

@@ -5,19 +5,10 @@
   justify-content: center;
   align-items: center;
 
-  .tittle_contacto {
-    text-align: center;
-    color: $title_color;
-    border-top: 0.1rem solid $black_color;
-    border-bottom: 0.1rem solid $black_color;
-    margin: 1rem;
-    padding: 0.5rem;
-    text-transform: uppercase;
-  }
-
   .formulario {
     background-color: $white_color;
     text-align: center;
+    margin-bottom: 1rem;
 
     input {
       padding: 0.5rem;
@@ -50,12 +41,9 @@
   
 @media only screen and (min-width: 600px) {
   .main_contacto {
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
 
-    .tittle_contacto {
+    .tittle {
       font-weight: lighter;
     }
 
@@ -64,7 +52,7 @@
     }
 
     .formulario {
-      width: 80%;
+      width: 70%;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -74,7 +62,10 @@
       margin-bottom: 3rem;
 
       .btn_form:hover {
-        background-color: $gray_dark_color;
+        background-color: $second_color;
+        a {
+          color: $black_color;
+        }
       }
     }
 
